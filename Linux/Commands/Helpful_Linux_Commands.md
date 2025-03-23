@@ -48,17 +48,10 @@ This document serves as a cheat sheet for Linux commands I learn in this class. 
 
 ---
 
-## Key Linux Concepts (From Your Notes)
+## Key Linux Concepts
 - **Linux Kernel**: The core of the operating system that manages hardware and processes.
 - **GNU Tools**: Essential utilities (e.g., `bash`, `grep`, `tar`) that make Linux functional.
 - **Distributions**: Different versions of Linux (e.g., Ubuntu, Fedora, CentOS) tailored for specific needs.
 - **CLI vs. GUI**: The Command Line Interface (CLI) is more powerful and efficient for system administration, while the Graphical User Interface (GUI) is user-friendly for desktop use.
 - **Package Management**: Use `apt` (Debian-based) or `yum` (Red Hat-based) to install, update, and manage software.
 - **Security**: Use strong passwords, enable firewalls (`ufw` or `iptables`), and keep your system updated to stay secure.
-
----
-
-## Example Workflow
-1. **Navigate to a Directory**:
-   ```bash
-   cd /path/to/directory
