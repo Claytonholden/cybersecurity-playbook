@@ -92,6 +92,49 @@
 
 ---
 
+## Networking Commands
+
+| Command | Description | Flags |
+|---------|-------------|-------|
+| ip | Shows/manages network devices, routes, and tunnels | addr (IP address info), link (device info), route (routing table) |
+| ping | Sends ICMP echo requests to test connectivity | -c (count), -i (interval) |
+| netstat | Displays network connections, routing tables, and stats | -t (TCP), -u (UDP), -l (listening) |
+| ss | Displays socket statistics | -t (TCP), -u (UDP), -l (listening) |
+| ifconfig | Configures network interfaces | -a (all interfaces), up (bring up interface), down (bring down interface) |
+
+---
+
+## Package Management
+
+| Command | Description | Flags |
+|---------|-------------|-------|
+| apt-get | Manages packages (install/remove) | install (to install), remove (to uninstall), update (update package lists) |
+| dpkg | Installs and manages .deb packages | -i (install), -r (remove), -l (list installed packages) |
+
+---
+
+## Disk Management
+
+| Command | Description | Flags |
+|---------|-------------|-------|
+| fdisk | Partitioning tool | -l (list partitions), -t (specify partition table type) |
+| mkfs | Creates a filesystem | -t (specify file system type, e.g., ext4, ntfs) |
+| mount | Mounts filesystems | -t (type), -o (options) |
+| umount | Unmounts filesystems | None |
+
+---
+
+## Process Management
+
+| Command | Description | Flags |
+|---------|-------------|-------|
+| ps | Displays process status | -e (all processes), -f (full format) |
+| top | Displays system tasks | None |
+| kill | Sends a signal to terminate processes | -9 (force kill), -l (list signals) |
+| htop | Interactive process viewer (similar to top) | None |
+
+---
+
 ## Basic Scripting & Shell
 
 | Command  | Description                        | Flags/Examples                          |
@@ -106,18 +149,10 @@
 
 ---
 
-**Shortcuts:**
+## Shortcuts:
 - Ctrl+C = Stop current command.
 - Ctrl+L = Clear screen (same as clear).
 - Tab = Auto-complete paths/commands.
-
-**Permissions:**
-- `chmod 755 file` = Give owner rwx, others rx.
-- `chown user:group file` = Change ownership.
-
-**System Info:**
-- `df -h` = Check disk space.
-- `du -sh dir/` = Check dir size.
 
 ---
 
@@ -125,7 +160,3 @@
 
 **Absolute vs. Relative Paths:**
 - `/home/user` (absolute) vs. `../parent_dir` (relative).
-
-**Package Managers:**
-- Debian: `apt install package`
-- Red Hat: `yum install package`
