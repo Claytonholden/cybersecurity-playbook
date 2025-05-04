@@ -149,6 +149,20 @@
 
 ---
 
+## Ownership, Permissions & Special Files
+
+| Command | Description | Flags |
+|---------|-------------|-------|
+| chmod   | Changes file permissions        | -R (recursive), numeric mode (e.g., 755) |
+| chown   | Changes file ownership          | user:group, -R (recursive) |
+| chgrp   | Changes group ownership         | -R (recursive) |
+| umask   | Sets default permission mask    | None |
+| ls -l   | Lists detailed file info         | Shows owner, group, and permissions |
+| stat    | Displays detailed file metadata | None |
+| sudo    | Run as another user (root)      | -u (specify user) |
+
+---
+
 ## Shortcuts:
 - Ctrl+C = Stop current command.
 - Ctrl+L = Clear screen (same as clear).
